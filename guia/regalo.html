@@ -25,7 +25,7 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
 .rvs-g .hero p+p{margin-top:10px}
 .rvs-g .ask{font-family:Lexend,Arial,sans-serif;font-weight:500;font-size:15px;margin:20px 0 10px}
 .rvs-g .seg{display:inline-flex;gap:4px;background:#fff;border-radius:999px;padding:4px;max-width:100%}
-.rvs-g .seg button{font-family:Lexend,Arial,sans-serif;font-size:15px;font-weight:500;border:0;border-radius:999px;padding:10px 22px;cursor:pointer;background:transparent;color:var(--navy);min-height:44px;line-height:1.2}
+.rvs-g .seg button{text-transform:none!important;font-family:Lexend,Arial,sans-serif;font-size:15px;font-weight:500;border:0;border-radius:999px;padding:10px 22px;cursor:pointer;background:transparent;color:var(--navy);min-height:44px;line-height:1.2}
 .rvs-g .seg button[aria-pressed="true"]{background:var(--navy);color:#fff}
 .rvs-g .seg button:focus-visible,.rvs-g .btn:focus-visible,.rvs-g summary:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
 /* secciones */
@@ -38,7 +38,7 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
 .rvs-g .box p{color:var(--ink-soft)}
 .rvs-g .box p+p,.rvs-g .box h3+p{margin-top:8px}
 .rvs-g .btns{display:flex;flex-direction:column;gap:10px;margin-top:16px}
-.rvs-g .btn{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px;padding:12px 20px;border-radius:14px;background:var(--navy);color:#fff!important;font-family:Lexend,Arial,sans-serif;font-weight:700;font-size:16px;line-height:1.2}
+.rvs-g .btn{text-transform:none!important;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px;padding:12px 20px;border-radius:14px;background:var(--navy);color:#fff!important;font-family:Lexend,Arial,sans-serif;font-weight:700;font-size:16px;line-height:1.2}
 .rvs-g .btn small{font-family:Arial,Helvetica,sans-serif;font-weight:400;font-size:13px;opacity:.85}
 .rvs-g .btn.alt{background:var(--tint-sky);color:var(--navy)!important}
 .rvs-g .btn:hover{filter:brightness(1.12)}
@@ -66,7 +66,7 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
 .rvs-g .note b.t{font-family:Lexend,Arial,sans-serif;font-size:16px;color:var(--navy)}
 .rvs-g .note p{color:var(--navy)}
 .rvs-g details{background:#fff;border:2px solid var(--line);border-radius:18px;padding:4px 18px;margin-bottom:10px}
-.rvs-g summary{cursor:pointer;font-weight:700;padding:12px 0;color:var(--blue);font-size:15px}
+.rvs-g summary{text-transform:none!important;cursor:pointer;font-weight:700;padding:12px 0;color:var(--blue);font-size:15px}
 .rvs-g details p{color:var(--ink-soft);padding-bottom:12px}
 .rvs-g .two{display:grid;grid-template-columns:1fr;gap:14px}
 .rvs-g .two .box{margin:0}
@@ -235,7 +235,10 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
   function set(os){ r.setAttribute('data-os',os); for(var i=0;i<bs.length;i++){bs[i].setAttribute('aria-pressed',bs[i].getAttribute('data-os')===os?'true':'false');} }
   for(var i=0;i<bs.length;i++){ bs[i].addEventListener('click',function(){ set(this.getAttribute('data-os')); }); }
   var p=(navigator.userAgent||'')+' '+(navigator.platform||'');
-  set(/Win/i.test(p)?'win':(/Mac/i.test(p)&&!/iPhone|iPad/i.test(p)?'mac':'all'));
+  var os='all';
+  if(/Win/i.test(p)){os='win';}
+  else if(/Mac/i.test(p)){if(!/iPhone|iPad/i.test(p)){os='mac';}}
+  set(os);
 })();
 </script>
 <!-- /wp:html -->
