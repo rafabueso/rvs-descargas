@@ -1,171 +1,241 @@
-<!-- Regalo de Navidad · Rafa Vocal Studio · bloque para el widget "HTML" de Elementor -->
+<!-- wp:html -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700;800&display=swap" rel="stylesheet">
 <style>
-.rvs-g{--ink:#082a49;--soft:#4a6473;--line:#dde3e7;--orange:#f57727;--yellow:#f8b83e;--sky:#94c8e3;--tsky:#dcedf6;--tpeach:#fde3d1;--tyellow:#fdefcf;--ok:#17693f;--okbg:#e3f3ea;
- font:400 16px/1.6 Arial,Helvetica,sans-serif;color:var(--ink);max-width:960px;margin:0 auto;padding:8px 16px 48px}
+.rvs-g{--navy:#082a49;--orange:#f57727;--sky:#94c8e3;--tint-sky:#dcedf6;--cream:#fdefcf;--peach:#fde3d1;--ink-soft:#4a6473;--ink-muted:#587080;--line:#d7e3ec;--blue:#1550a6;--ok:#17693f;--ok-bg:#e3f3ea;
+font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-height:1.6;max-width:720px;margin:0 auto;padding:28px 16px 56px;box-sizing:border-box}
 .rvs-g *{box-sizing:border-box}
-.rvs-g h1,.rvs-g h2,.rvs-g h3,.rvs-g p,.rvs-g a,.rvs-g b,.rvs-g summary,.rvs-g small,.rvs-g span,.rvs-g li{text-transform:none!important;font-family:Arial,Helvetica,sans-serif}
-.rvs-g h1,.rvs-g h2,.rvs-g h3{font-weight:700;color:var(--ink)}
-.rvs-g .hero h1{color:#fff}
-.rvs-g a.btn{color:#fff!important} .rvs-g a.btn.alt{color:#0b3045!important}
-.rvs-g h2{font-size:26px;line-height:1.2;letter-spacing:-.02em;margin:48px 0 8px}
-.rvs-g h3{font-size:19px;margin:0 0 6px}
-.rvs-g p{margin:0 0 12px}
-.rvs-g .hero{background:var(--ink);color:#fff;border-radius:22px;padding:36px 28px;text-align:center}
-.rvs-g .hero h1{font-size:34px;line-height:1.15;margin:0 0 10px;letter-spacing:-.02em;color:#fff}
-.rvs-g .hero p{color:#dfe8ee;font-size:18px;max-width:640px;margin:0 auto}
-.rvs-g .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:20px}
-.rvs-g .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
-.rvs-g .card .tag{display:inline-block;background:var(--tyellow);border-radius:999px;padding:2px 12px;font-size:13px;font-weight:700;margin-bottom:10px}
-.rvs-g .btns{display:grid;gap:10px;margin-top:14px}
-.rvs-g a.btn{display:block;text-align:center;text-decoration:none;font-weight:700;padding:13px 16px;border-radius:999px;background:var(--ink);color:#fff}
-.rvs-g a.btn.alt{background:var(--yellow);color:#0b3045}
-.rvs-g a.btn small{display:block;font-weight:400;font-size:12px;opacity:.85}
-.rvs-g .note{border-radius:14px;padding:14px 16px;margin:16px 0}
-.rvs-g .note.sky{background:var(--tsky)} .rvs-g .note.peach{background:var(--tpeach)} .rvs-g .note.ok{background:var(--okbg)}
-.rvs-g .steps{counter-reset:p;display:grid;gap:22px;margin-top:18px}
-.rvs-g .step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;display:grid;gap:12px}
-.rvs-g .step::before{counter-increment:p;content:counter(p);width:34px;height:34px;border-radius:50%;background:var(--yellow);color:#0b3045;font-weight:700;display:grid;place-items:center}
-.rvs-g .step img{max-width:100%;height:auto;border-radius:12px;border:1px solid var(--line);justify-self:start}
-.rvs-g .illus{font-size:12px;color:var(--soft);margin-top:-6px}
-.rvs-g details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}
-.rvs-g summary{cursor:pointer;font-weight:700}
-.rvs-g code{background:#eceff1;border-radius:6px;padding:2px 6px;font-size:14px;word-break:break-all}
-/* Pantallas de Windows dibujadas */
-.rvs-g .win{background:#2b3a67;color:#fff;border-radius:6px;padding:20px 22px;max-width:480px;font-family:"Segoe UI",Arial,sans-serif}
-.rvs-g .win b{font-size:19px;display:block;margin-bottom:8px}
-.rvs-g .win .l{color:#cfd8ff;text-decoration:underline;font-size:14px}
-.rvs-g .win .b{display:inline-block;background:#fff;color:#000;padding:6px 16px;margin:14px 8px 0 0;font-size:14px}
-.rvs-g .win .b.hl,.rvs-g .win .l.hl{outline:4px solid var(--orange);outline-offset:3px}
+.rvs-g h1,.rvs-g h2,.rvs-g h3{font-family:Lexend,Arial,sans-serif;margin:0;color:var(--navy);text-transform:none!important;letter-spacing:-.01em}
+.rvs-g p,.rvs-g ul{margin:0}
+.rvs-g a{text-decoration:none}
+.rvs-g [hidden]{display:none!important}
+/* cabecera de herramienta */
+.rvs-g .top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:20px;border-bottom:2px solid var(--navy)}
+.rvs-g .logo{display:block;width:190px;max-width:55vw;height:auto}
+.rvs-g .top span{font-family:Lexend,Arial,sans-serif;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase!important;color:var(--ink-muted)}
+/* hero */
+.rvs-g .hero{background:var(--tint-sky);border-radius:28px;padding:26px 24px 24px;margin-bottom:18px}
+.rvs-g .stickers{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin:0 0 18px 2px}
+.rvs-g .st{display:inline-flex;align-items:center;gap:8px;border:6px solid #fff;border-radius:999px;box-shadow:0 12px 22px -12px rgba(8,42,73,.5),0 0 0 1px #e3e8eb;color:var(--navy);white-space:nowrap;font-family:Lexend,Arial,sans-serif}
+.rvs-g .st.f{padding:8px 18px 8px 12px;background:var(--sky);transform:rotate(-3deg)}
+.rvs-g .st.f b{font-size:28px;font-weight:800;letter-spacing:-.06em;line-height:1}
+.rvs-g .st.f i{font-style:normal;font-size:14px;font-weight:300;padding-top:7px}
+.rvs-g .st.p{padding:6px 15px;font-size:16px;font-weight:700;background:#f8b83e;transform:rotate(4deg)}
+.rvs-g .hero h1{font-size:38px;font-weight:800;letter-spacing:-.035em;line-height:1.08;margin-bottom:12px}
+.rvs-g .hero p{color:var(--ink-soft);max-width:560px}
+.rvs-g .hero p+p{margin-top:10px}
+.rvs-g .ask{font-family:Lexend,Arial,sans-serif;font-weight:500;font-size:15px;margin:20px 0 10px}
+.rvs-g .seg{display:inline-flex;gap:4px;background:#fff;border-radius:999px;padding:4px;max-width:100%}
+.rvs-g .seg button{font-family:Lexend,Arial,sans-serif;font-size:15px;font-weight:500;border:0;border-radius:999px;padding:10px 22px;cursor:pointer;background:transparent;color:var(--navy);min-height:44px;line-height:1.2}
+.rvs-g .seg button[aria-pressed="true"]{background:var(--navy);color:#fff}
+.rvs-g .seg button:focus-visible,.rvs-g .btn:focus-visible,.rvs-g summary:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+/* secciones */
+.rvs-g h2{font-size:22px;font-weight:700;line-height:1.25;margin:34px 0 12px}
+.rvs-g h3{font-size:19px;font-weight:700;line-height:1.25}
+.rvs-g .lede{color:var(--ink-soft);margin-bottom:14px}
+.rvs-g .box{background:#fff;border:2px solid var(--line);border-radius:22px;padding:22px 20px;margin-bottom:14px}
+.rvs-g .box.go{border-color:var(--navy);border-left:8px solid var(--orange)}
+.rvs-g .tag{display:inline-block;font-family:Lexend,Arial,sans-serif;font-size:12px;font-weight:500;background:var(--cream);border-radius:999px;padding:3px 12px;margin-bottom:8px}
+.rvs-g .box p{color:var(--ink-soft)}
+.rvs-g .box p+p,.rvs-g .box h3+p{margin-top:8px}
+.rvs-g .btns{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.rvs-g .btn{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px;padding:12px 20px;border-radius:14px;background:var(--navy);color:#fff!important;font-family:Lexend,Arial,sans-serif;font-weight:700;font-size:16px;line-height:1.2}
+.rvs-g .btn small{font-family:Arial,Helvetica,sans-serif;font-weight:400;font-size:13px;opacity:.85}
+.rvs-g .btn.alt{background:var(--tint-sky);color:var(--navy)!important}
+.rvs-g .btn:hover{filter:brightness(1.12)}
+.rvs-g .peso{font-size:13px;color:var(--ink-muted);margin-top:12px}
+/* pasos */
+.rvs-g .step{display:flex;gap:16px;background:#fff;border:2px solid var(--line);border-radius:22px;padding:22px 20px;margin-bottom:14px}
+.rvs-g .n{flex:none;width:40px;height:40px;border-radius:50%;background:var(--sky);font-family:Lexend,Arial,sans-serif;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
+.rvs-g .step>div{min-width:0;flex:1;display:flex;flex-direction:column;gap:10px}
+.rvs-g .step p,.rvs-g .step li{color:var(--ink-soft)}
+.rvs-g .step b{color:var(--navy)}
+.rvs-g .step ul{padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.rvs-g .step img{display:block;max-width:100%;height:auto;border-radius:14px;border:2px solid var(--line)}
+.rvs-g .cap{font-size:13px;color:var(--ink-muted)}
+.rvs-g code{font-family:Menlo,Consolas,monospace;font-size:14px;background:#eceff1;border-radius:6px;padding:2px 6px;color:var(--navy);word-break:break-all}
+.rvs-g .win{background:#e8f0fb;border:1px solid #b9cdea;border-radius:10px;padding:16px;font-size:14px;color:#102a43;line-height:1.5}
+.rvs-g .win b{display:block;font-size:17px;margin-bottom:6px;color:#102a43}
+.rvs-g .win .l{color:#1a4fa0;text-decoration:underline}
+.rvs-g .win .b{display:inline-block;margin:10px 8px 0 0;padding:6px 14px;border:1px solid #7a8da8;border-radius:4px;background:#fff;font-size:13px}
+.rvs-g .win .hl{outline:3px solid var(--orange);outline-offset:2px}
+/* avisos */
+.rvs-g .note{border-radius:22px;padding:20px;margin-bottom:14px;display:flex;flex-direction:column;gap:8px}
+.rvs-g .note.sky{background:var(--tint-sky)}
+.rvs-g .note.peach{background:var(--peach)}
+.rvs-g .note.ok{background:var(--ok-bg)}
+.rvs-g .note b.t{font-family:Lexend,Arial,sans-serif;font-size:16px;color:var(--navy)}
+.rvs-g .note p{color:var(--navy)}
+.rvs-g details{background:#fff;border:2px solid var(--line);border-radius:18px;padding:4px 18px;margin-bottom:10px}
+.rvs-g summary{cursor:pointer;font-weight:700;padding:12px 0;color:var(--blue);font-size:15px}
+.rvs-g details p{color:var(--ink-soft);padding-bottom:12px}
+.rvs-g .two{display:grid;grid-template-columns:1fr;gap:14px}
+.rvs-g .two .box{margin:0}
+@media(min-width:640px){.rvs-g .two{grid-template-columns:1fr 1fr}.rvs-g .hero h1{font-size:44px}}
+/* según ordenador */
+.rvs-g[data-os="mac"] .only-win,.rvs-g[data-os="win"] .only-mac{display:none!important}
 </style>
 
-<div class="rvs-g">
+<div class="rvs-g" data-os="all">
+
+<div class="top">
+  <img class="logo" src="__LOGO__" alt="Rafa Vocal Studio">
+  <span>Regalo de Navidad</span>
+</div>
 
 <div class="hero">
-  <h1>🎁 Un regalo de Navidad de Rafa Vocal Studio</h1>
-  <p>Dos programas gratuitos que he hecho para ti y para mis alumnos: uno para sacar el audio de una canción de YouTube y otro para separar voz y música y practicar con ella.</p>
-</div>
-
-<h2>1. Elige y descarga</h2>
-<p>Primero mira qué ordenador tienes (más abajo te explico cómo saberlo en el Mac) y pulsa el botón que te toque.</p>
-
-<div class="cards">
-  <div class="card">
-    <span class="tag">El sencillo</span>
-    <h3>Descargar audio</h3>
-    <p>Pegas el enlace de YouTube y te lo guarda en MP3 o M4A. Nada más.</p>
-    <div class="btns">
-      <a class="btn" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-windows.exe">🪟 Windows</a>
-      <a class="btn alt" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-mac-apple-silicon.dmg"> Mac con chip Apple <small>M1, M2, M3, M4…</small></a>
-      <a class="btn alt" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-mac-intel.dmg"> Mac con Intel <small>los más antiguos</small></a>
-    </div>
+  <div class="stickers">
+    <span class="st f"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21.5h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></svg><b>lab</b><i>session</i></span>
+    <span class="st p">karaokes a tu medida</span>
   </div>
-  <div class="card">
-    <span class="tag">El completo</span>
-    <h3>Pistas</h3>
-    <p>Pegas un enlace o subes una canción y la separa en música, voz principal y coros. Cambias el tono y la velocidad para ensayar.</p>
-    <div class="btns">
-      <a class="btn" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-windows.exe">🪟 Windows</a>
-      <a class="btn alt" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-mac-apple-silicon.dmg"> Mac con chip Apple <small>M1, M2, M3, M4…</small></a>
-      <a class="btn alt" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-mac-intel.dmg"> Mac con Intel <small>los más antiguos</small></a>
-    </div>
+  <h1>Tu regalo de Navidad</h1>
+  <p>Dos programas gratis que he hecho para ti, para la Lab Session de karaoke. Uno saca el audio de una canción de YouTube. El otro separa la voz de la música para que ensayes cantando sobre ella.</p>
+  <p class="ask">¿Qué ordenador tienes?</p>
+  <div class="seg" role="group" aria-label="Tu ordenador">
+    <button type="button" data-os="mac" aria-pressed="false">Mac</button>
+    <button type="button" data-os="win" aria-pressed="false">Windows</button>
   </div>
 </div>
-<p class="illus" style="margin-top:10px">Pistas pesa más (unos 270–300 MB) porque lleva dentro la inteligencia que separa las voces. Descargar audio pesa la mitad (unos 140–160 MB). La instalación tarda un par de minutos.</p>
 
-<h2>¿Qué Mac tengo?</h2>
-<div class="step">
-  <p>Arriba a la izquierda, pulsa el icono de la manzana  → <b>Ajustes del Sistema</b> → <b>General</b> → <b>Información</b>. Mira la línea <b>Chip</b>:</p>
-  <ul>
-    <li>Si pone <b>Apple M1, M2, M3, M4…</b> → botón <b>Mac con chip Apple</b>.</li>
-    <li>Si pone <b>Procesador: Intel…</b> → botón <b>Mac con Intel</b>.</li>
-  </ul>
-  <img src="https://raw.githubusercontent.com/rafabueso/rvs-descargas/main/guia/mac-chip.png" alt="Ajustes del Sistema, Información: línea Chip con Apple M4" width="560">
+<h2>1. Descarga el programa</h2>
+<p class="lede">Elige el que necesites. Puedes instalar los dos.</p>
+
+<div class="box">
+  <span class="tag">El sencillo</span>
+  <h3>Descargar audio</h3>
+  <p>Pegas el enlace de YouTube y te guarda el audio en MP3 o M4A. Nada más.</p>
+  <div class="btns">
+    <a class="btn only-win" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-windows.exe">Descargar para Windows <small>.exe</small></a>
+    <a class="btn only-mac" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-mac-apple-silicon.dmg">Mac con chip Apple <small>M1, M2, M3, M4…</small></a>
+    <a class="btn alt only-mac" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-mac-intel.dmg">Mac con Intel <small>los más antiguos</small></a>
+  </div>
+  <p class="peso">Pesa unos 150 MB.</p>
 </div>
 
-<h2>2. Por qué te va a salir un aviso (y por qué no pasa nada)</h2>
+<div class="box">
+  <span class="tag">El completo</span>
+  <h3>Pistas</h3>
+  <p>Pegas un enlace o subes una canción y la separa en música, voz principal y coros. Cambias el tono y la velocidad para ensayar.</p>
+  <div class="btns">
+    <a class="btn only-win" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-windows.exe">Descargar para Windows <small>.exe</small></a>
+    <a class="btn only-mac" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-mac-apple-silicon.dmg">Mac con chip Apple <small>M1, M2, M3, M4…</small></a>
+    <a class="btn alt only-mac" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-mac-intel.dmg">Mac con Intel <small>los más antiguos</small></a>
+  </div>
+  <p class="peso">Pesa unos 300 MB porque lleva dentro lo que separa las voces. La instalación tarda un par de minutos.</p>
+</div>
+
+<div class="step only-mac">
+  <span class="n">?</span>
+  <div>
+    <h3>¿Chip Apple o Intel?</h3>
+    <p>Arriba a la izquierda pulsa la manzana → <b>Ajustes del Sistema</b> → <b>General</b> → <b>Información</b>. Mira la línea <b>Chip</b>:</p>
+    <ul>
+      <li>Pone <b>Apple M1, M2, M3, M4…</b> → botón <b>Mac con chip Apple</b>.</li>
+      <li>Pone <b>Procesador Intel…</b> → botón <b>Mac con Intel</b>.</li>
+    </ul>
+    <img src="https://raw.githubusercontent.com/rafabueso/rvs-descargas/main/guia/mac-chip.png" alt="Ajustes del Sistema, Información: línea Chip con Apple M4" width="560">
+  </div>
+</div>
+
+<h2>2. El aviso que te va a salir</h2>
 <div class="note sky">
-  <p><b>Es normal.</b> Al abrir el programa por primera vez, tu ordenador te dirá algo como <i>“Apple no ha podido verificar que no contenga software malicioso”</i> (Mac) o <i>“Windows protegió su PC”</i>.</p>
-  <p>Ese aviso sale con <b>cualquier programa que no esté firmado</b> con el certificado de pago de Apple o de Microsoft (unos 99 € al año). Yo no lo he pagado para un regalo gratuito, así que el aviso sale siempre. <b>No significa que el programa sea peligroso.</b></p>
+  <b class="t">Es normal y no pasa nada</b>
+  <p>Al abrir el programa por primera vez, tu ordenador te dirá algo como <i>“Apple no ha podido verificar que no contenga software malicioso”</i> o <i>“Windows protegió su PC”</i>.</p>
+  <p>Sale con cualquier programa que no lleve el certificado de pago de Apple o de Microsoft (unos 99 € al año). No lo he pagado para un regalo gratuito, así que el aviso sale siempre.</p>
 </div>
 <div class="note ok">
-  <p><b>Lo que sí te aseguro:</b> lo he hecho yo, sin anuncios ni publicidad, no te pide ninguna cuenta, no envía tus datos a ningún sitio y solo guarda los archivos en la carpeta que tú elijas. Solo se conecta a internet para descargar de YouTube y para avisarte si hay una versión nueva.</p>
+  <b class="t">Lo que sí te aseguro</b>
+  <p>Lo he hecho yo. No lleva anuncios, no te pide ninguna cuenta y no envía tus datos a ningún sitio. Guarda los archivos solo en la carpeta que tú elijas.</p>
 </div>
-<p>Solo tienes que hacer esto <b>la primera vez</b>. Después se abre como cualquier otra app.</p>
+<p class="lede">Solo lo haces <b>la primera vez</b>. Después se abre como cualquier otra app.</p>
 
-<h2>3. Instalar en Mac, paso a paso</h2>
-<div class="steps">
-  <div class="step">
-    <h3>Abre el archivo descargado y arrastra la app a “Aplicaciones”</h3>
-    <p>Haz doble clic en el archivo que termina en <code>.dmg</code> (está en tu carpeta de Descargas). Se abre una ventana: arrastra el icono del programa hasta la carpeta <b>Aplicaciones</b>.</p>
-  </div>
-  <div class="step">
+<h2 class="only-mac">3. Instalar en Mac</h2>
+<div class="only-mac">
+  <div class="step"><span class="n">1</span><div>
+    <h3>Abre el archivo y arrastra la app a Aplicaciones</h3>
+    <p>Doble clic en el archivo <code>.dmg</code> (está en Descargas). Se abre una ventana: arrastra el icono del programa a la carpeta <b>Aplicaciones</b>.</p>
+  </div></div>
+  <div class="step"><span class="n">2</span><div>
     <h3>Ábrela desde Aplicaciones</h3>
-    <p>Entra en la carpeta Aplicaciones y haz doble clic en el programa. Te saldrá este aviso. <b>No pulses “Trasladar a la Papelera”</b>: pulsa <b>Aceptar</b>.</p>
-    <img src="https://raw.githubusercontent.com/rafabueso/rvs-descargas/main/guia/mac-no-se-ha-abierto.png" alt="Aviso: No se ha abierto Pistas. Apple no ha podido verificar que no contenga software malicioso" width="420">
-  </div>
-  <div class="step">
-    <h3>Ve a Ajustes del Sistema → Privacidad y seguridad</h3>
-    <p>Abre el icono de la manzana  → <b>Ajustes del Sistema</b> → <b>Privacidad y seguridad</b> y baja hasta el final, a la sección <b>Seguridad</b>.</p>
+    <p>Doble clic en el programa. Te saldrá este aviso. <b>No pulses “Trasladar a la Papelera”</b>: pulsa <b>Aceptar</b>.</p>
+    <img src="https://raw.githubusercontent.com/rafabueso/rvs-descargas/main/guia/mac-no-se-ha-abierto.png" alt="Aviso: No se ha abierto. Apple no ha podido verificar que no contenga software malicioso" width="420">
+  </div></div>
+  <div class="step"><span class="n">3</span><div>
+    <h3>Ve a Privacidad y seguridad</h3>
+    <p>Manzana → <b>Ajustes del Sistema</b> → <b>Privacidad y seguridad</b>. Baja hasta el final, a la sección <b>Seguridad</b>.</p>
     <img src="https://raw.githubusercontent.com/rafabueso/rvs-descargas/main/guia/mac-privacidad-seguridad.png" alt="Ajustes del Sistema, Privacidad y seguridad, sección Seguridad" width="560">
-  </div>
-  <div class="step">
+  </div></div>
+  <div class="step"><span class="n">4</span><div>
     <h3>Pulsa “Abrir igualmente”</h3>
-    <p>Arriba de esa sección aparecerá una línea que dice que el programa se bloqueó, con el botón <b>Abrir igualmente</b>. Púlsalo. Te pedirá tu contraseña del Mac (o la huella): es la de siempre, para confirmar que eres tú.</p>
+    <p>Ahí verás que el programa se bloqueó, con el botón <b>Abrir igualmente</b>. Púlsalo. Te pedirá la contraseña del Mac o la huella, la de siempre.</p>
     <img src="https://raw.githubusercontent.com/rafabueso/rvs-descargas/main/guia/mac-abrir-igualmente.png" alt="Sección Seguridad con el botón Abrir igualmente resaltado" width="560">
-    <p class="illus">Ilustración: así se ve la sección cuando el Mac ha bloqueado el programa.</p>
-  </div>
-  <div class="step">
+    <p class="cap">Ilustración de cómo se ve cuando el Mac ha bloqueado el programa.</p>
+  </div></div>
+  <div class="step"><span class="n">5</span><div>
     <h3>Confirma con “Abrir”</h3>
-    <p>Sale un último aviso preguntando si quieres abrirlo. Pulsa <b>Abrir</b>. Listo: el programa se abre y ya no te volverá a preguntar.</p>
-  </div>
+    <p>Último aviso, preguntando si quieres abrirlo. Pulsa <b>Abrir</b>. Listo: ya no te lo volverá a preguntar.</p>
+  </div></div>
+
+  <details>
+    <summary>Me sale “Para usar apps para Intel tendrás que instalar Rosetta”</summary>
+    <p>Has descargado la versión para Intel y tu Mac tiene chip Apple. Pulsa <b>Ahora no</b>, borra ese programa y descarga el botón <b>Mac con chip Apple</b>.</p>
+  </details>
+  <details>
+    <summary>Me sale “está dañado y no se puede abrir”</summary>
+    <p>Abre la app <b>Terminal</b> (búscala con la lupa de arriba a la derecha), pega esta línea con el programa que hayas instalado y pulsa Intro:</p>
+    <p><code>xattr -cr /Applications/Pistas.app</code></p>
+    <p><code>xattr -cr "/Applications/Descargar audio.app"</code></p>
+    <p>Vuelve a abrir el programa. Si sigue igual, escríbeme.</p>
+  </details>
 </div>
 
-<details>
-  <summary>Me sale “Para usar apps para Intel tendrás que instalar Rosetta”</summary>
-  <p>Has descargado la versión para Mac con Intel y tu Mac tiene chip Apple. Pulsa <b>Ahora no</b>, borra ese programa y descarga el botón <b>Mac con chip Apple</b>.</p>
-</details>
-<details>
-  <summary>Me sale “está dañado y no se puede abrir”</summary>
-  <p>Abre la app <b>Terminal</b> (búscala con la lupa de arriba a la derecha) y pega esta línea tal cual, con el programa que hayas instalado, y pulsa Intro:</p>
-  <p><code>xattr -cr /Applications/Pistas.app</code></p>
-  <p><code>xattr -cr "/Applications/Descargar audio.app"</code></p>
-  <p>Después vuelve a abrir el programa. Si sigue fallando, escríbeme.</p>
-</details>
-
-<h2>4. Instalar en Windows, paso a paso</h2>
-<div class="steps">
-  <div class="step">
+<h2 class="only-win">3. Instalar en Windows</h2>
+<div class="only-win">
+  <div class="step"><span class="n">1</span><div>
     <h3>Abre el archivo descargado</h3>
-    <p>Haz doble clic en el archivo que termina en <code>.exe</code> (está en Descargas). Si Chrome te pregunta si quieres conservarlo, pulsa <b>Conservar</b>.</p>
-  </div>
-  <div class="step">
+    <p>Doble clic en el archivo <code>.exe</code> (está en Descargas). Si Chrome te pregunta si quieres conservarlo, pulsa <b>Conservar</b>.</p>
+  </div></div>
+  <div class="step"><span class="n">2</span><div>
     <h3>Pulsa “Más información”</h3>
     <p>Saldrá una ventana azul que dice <b>“Windows protegió su PC”</b>. No pulses “No ejecutar”: pulsa el enlace pequeño <b>Más información</b>.</p>
     <div class="win"><b>Windows protegió su PC</b>Microsoft Defender SmartScreen impidió el inicio de una aplicación no reconocida. Ejecutar esta aplicación podría poner en riesgo tu PC.<br><span class="l hl">Más información</span><br><span class="b">No ejecutar</span></div>
-    <p class="illus">Ilustración: así se ve el aviso en Windows.</p>
-  </div>
-  <div class="step">
+    <p class="cap">Ilustración de cómo se ve el aviso en Windows.</p>
+  </div></div>
+  <div class="step"><span class="n">3</span><div>
     <h3>Pulsa “Ejecutar de todos modos”</h3>
-    <p>Ahora aparece un botón nuevo. Púlsalo y el programa se instala. Después se abre desde el menú Inicio, como cualquier otro.</p>
-    <div class="win"><b>Windows protegió su PC</b>Aplicación: <i>programa de Rafa Vocal Studio</i><br>Editor: Editor desconocido<br><span class="b hl">Ejecutar de todos modos</span><span class="b">No ejecutar</span></div>
-    <p class="illus">Ilustración: así se ve después de pulsar “Más información”.</p>
-  </div>
+    <p>Aparece un botón nuevo. Púlsalo y se instala. Después lo abres desde el menú Inicio, como cualquier otro programa.</p>
+    <div class="win"><b>Windows protegió su PC</b>Editor: Editor desconocido<br><span class="b hl">Ejecutar de todos modos</span><span class="b">No ejecutar</span></div>
+    <p class="cap">Ilustración de cómo se ve después de pulsar “Más información”.</p>
+  </div></div>
 </div>
 
-<h2>5. Cómo se usa</h2>
-<div class="cards">
-  <div class="card"><h3>Descargar audio</h3><p>1) Copia el enlace del vídeo de YouTube. 2) Pulsa <b>Pegar</b>. 3) Elige MP3 o M4A. 4) Pulsa <b>Descargar audio</b>. El archivo se guarda en tu carpeta de Descargas (puedes cambiarla).</p></div>
-  <div class="card"><h3>Pistas</h3><p>Pega un enlace o sube una canción, espera a que la separe y ya puedes silenciar la voz, solo los coros o la música, y cambiar el tono y la velocidad para ensayar.</p></div>
+<h2>Cómo se usa</h2>
+<div class="two">
+  <div class="box"><h3>Descargar audio</h3><p>Copia el enlace del vídeo, pulsa <b>Pegar</b>, elige MP3 o M4A y pulsa <b>Descargar audio</b>. Se guarda en Descargas (puedes cambiar la carpeta).</p></div>
+  <div class="box"><h3>Pistas</h3><p>Pega un enlace o sube una canción y espera a que la separe. Después silencias la voz, los coros o la música, y cambias el tono y la velocidad para ensayar.</p></div>
 </div>
 
-<div class="note peach">
-  <p><b>Importante:</b> úsalos solo con contenido propio o con permiso de quien lo publicó. Los programas funcionan con vídeos de YouTube de hasta 20 minutos y no admiten listas de reproducción.</p>
+<div class="note peach" style="margin-top:14px">
+  <b class="t">Importante</b>
+  <p>Úsalos solo con contenido tuyo o con permiso de quien lo publicó. Funcionan con vídeos de YouTube de hasta 20 minutos y no admiten listas de reproducción.</p>
 </div>
 
 <h2>Actualizaciones</h2>
-<p>Los programas se renuevan cada mes para que sigan funcionando con YouTube. Cuando haya una versión nueva, te aparecerá un aviso arriba con un botón para descargarla. Vuelve a esta página, descarga la nueva y ábrela encima de la anterior.</p>
+<p class="lede">Renuevo los programas cada mes para que sigan funcionando con YouTube. Cuando haya una versión nueva, te saldrá un aviso arriba con un botón que te trae aquí: descarga la nueva y ábrela encima de la anterior.</p>
 
-<h2>¿Algo no funciona?</h2>
-<p>Escríbeme por WhatsApp y te ayudo. Cuéntame qué ordenador tienes y qué mensaje te sale (si puedes, con una captura).</p>
+<div class="note sky">
+  <b class="t">¿Algo no funciona?</b>
+  <p>Escríbeme por WhatsApp y te ayudo. Cuéntame qué ordenador tienes y qué mensaje te sale (si puedes, con una captura).</p>
+</div>
 
 </div>
+<script>
+(function(){
+  var r=document.querySelector('.rvs-g'); if(!r) return;
+  var bs=r.querySelectorAll('.seg button');
+  function set(os){ r.setAttribute('data-os',os); for(var i=0;i<bs.length;i++){bs[i].setAttribute('aria-pressed',bs[i].getAttribute('data-os')===os?'true':'false');} }
+  for(var i=0;i<bs.length;i++){ bs[i].addEventListener('click',function(){ set(this.getAttribute('data-os')); }); }
+  var p=(navigator.userAgent||'')+' '+(navigator.platform||'');
+  set(/Win/i.test(p)?'win':(/Mac/i.test(p)&&!/iPhone|iPad/i.test(p)?'mac':'all'));
+})();
+</script>
+<!-- /wp:html -->
