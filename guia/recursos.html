@@ -73,6 +73,14 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
 @media(min-width:640px){.rvs-g .two{grid-template-columns:1fr 1fr}.rvs-g .hero h1{font-size:44px}}
 /* según ordenador */
 .rvs-g[data-os="mac"] .only-win,.rvs-g[data-os="win"] .only-mac{display:none!important}
+.rvs-g .lista{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
+.rvs-g .lista .box{margin:0;border-left-width:2px}
+.rvs-g .lista .box.go{border-left:2px solid var(--line);border-color:var(--line)}
+.rvs-g .lista .btn{flex-direction:column;align-items:flex-start;gap:2px;justify-content:center}
+.rvs-g .lista .btns{margin-top:18px}
+@media(min-width:640px){.rvs-g .lista .btns{flex-direction:row}.rvs-g .lista .btn{flex:1}}
+.rvs-g .lista code{display:inline-block}
+.rvs-g .pie{margin-top:8px}
 </style>
 
 <div class="rvs-g">
@@ -88,22 +96,27 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
 </div>
 
 <h2>Programas</h2>
-<div class="two">
-  <div class="box go">
+<div class="lista">
+  <div class="box">
     <span class="tag">Disponible</span>
     <h3>Descargar audio</h3>
     <p>Pegas el enlace de YouTube y guarda el audio. También te hace el karaoke (la canción sin voz) o te deja solo la voz. Para Mac y Windows.</p>
-    <div class="btns"><a class="btn" href="https://www.rafabueso.com/regalo-de-navidad/">Descargar e instalar <small>con guía paso a paso</small></a></div>
+    <div class="btns"><a class="btn" href="https://www.rafabueso.com/regalo-de-navidad/">Descargar e instalar <small>con la guía paso a paso</small></a></div>
   </div>
   <div class="box">
-    <span class="tag">Muy pronto</span>
+    <span class="tag">En pruebas</span>
     <h3>Pistas</h3>
-    <p>Separa la voz, los coros y la música de una canción, y te deja cambiar el tono y la velocidad para estudiarla por tramos.</p>
-    <p class="peso">Todavía lo estoy terminando. Cuando esté listo, aparecerá aquí.</p>
+    <p>Separa la voz, los coros y la música de una canción, y te deja cambiar el tono y la velocidad para estudiarla por tramos. Todavía lo estoy terminando, de momento solo lo uso yo.</p>
+    <div class="btns">
+      <a class="btn" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-mac-apple-silicon.dmg">Mac con chip Apple <small>M1, M2, M3, M4…</small></a>
+      <a class="btn alt" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-mac-intel.dmg">Mac con Intel <small>los más antiguos</small></a>
+      <a class="btn alt" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-windows.exe">Windows <small>archivo .exe</small></a>
+    </div>
+    <p class="peso">Se instala igual que Descargar audio, con los mismos avisos de Mac y Windows: sigue la <a href="https://www.rafabueso.com/regalo-de-navidad/" style="color:var(--blue);text-decoration:underline">guía de instalación</a>. Si en el Mac sale “está dañado”, abre Terminal y pega: <code>xattr -cr /Applications/Pistas.app</code></p>
   </div>
 </div>
 
-<div class="note sky">
+<div class="note sky pie">
   <b class="t">Esta página irá creciendo</b>
   <p>Iré añadiendo aquí más programas y recursos según los vaya creando. Si necesitas ayuda para instalar alguno, escríbeme y lo vemos.</p>
 </div>
