@@ -87,8 +87,8 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
     <span class="st f"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21.5h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></svg><b>lab</b><i>session</i></span>
     <span class="st p">karaokes a tu medida</span>
   </div>
-  <h1>Tu regalo de Navidad</h1>
-  <p>Dos programas gratis que he hecho para ti, para la Lab Session de karaoke. Uno saca el audio de una canción de YouTube. El otro separa la voz de la música para que ensayes cantando sobre ella.</p>
+  <h1>Regalo de Navidad</h1>
+  <p>Un programa gratis que he hecho para ti, para la Lab Session de karaoke. Pegas el enlace de una canción de YouTube y te guarda el audio. Si quieres, también te hace el karaoke: la misma canción sin la voz, para que ensayes cantando encima.</p>
   <p class="ask">¿Qué ordenador tienes?</p>
   <div class="seg" role="group" aria-label="Tu ordenador">
     <button type="button" data-os="mac" aria-pressed="false">Mac</button>
@@ -97,30 +97,17 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
 </div>
 
 <h2>1. Descarga el programa</h2>
-<p class="lede">Elige el que necesites. Puedes instalar los dos.</p>
 
-<div class="box">
-  <span class="tag">El sencillo</span>
+<div class="box go">
+  <span class="tag">Gratis</span>
   <h3>Descargar audio</h3>
-  <p>Pegas el enlace de YouTube y te guarda el audio en MP3 o M4A. Nada más.</p>
+  <p>Pegas el enlace de YouTube y eliges qué guardar: el audio original, el karaoke (sin voz) o solo la voz.</p>
   <div class="btns">
     <a class="btn only-win" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-windows.exe">Descargar para Windows <small>.exe</small></a>
     <a class="btn only-mac" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-mac-apple-silicon.dmg">Mac con chip Apple <small>M1, M2, M3, M4…</small></a>
     <a class="btn alt only-mac" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/descargador-mac-intel.dmg">Mac con Intel <small>los más antiguos</small></a>
   </div>
-  <p class="peso">Pesa unos 150 MB.</p>
-</div>
-
-<div class="box">
-  <span class="tag">El completo</span>
-  <h3>Pistas</h3>
-  <p>Pegas un enlace o subes una canción y la separa en música, voz principal y coros. Cambias el tono y la velocidad para ensayar.</p>
-  <div class="btns">
-    <a class="btn only-win" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-windows.exe">Descargar para Windows <small>.exe</small></a>
-    <a class="btn only-mac" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-mac-apple-silicon.dmg">Mac con chip Apple <small>M1, M2, M3, M4…</small></a>
-    <a class="btn alt only-mac" href="https://github.com/rafabueso/rvs-descargas/releases/latest/download/pistas-mac-intel.dmg">Mac con Intel <small>los más antiguos</small></a>
-  </div>
-  <p class="peso">Pesa unos 300 MB porque lleva dentro lo que separa las voces. La instalación tarda un par de minutos.</p>
+  <p class="peso">Pesa unos 230 MB.</p>
 </div>
 
 <div class="step only-mac">
@@ -181,8 +168,7 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
   </details>
   <details>
     <summary>Me sale “está dañado y no se puede abrir”</summary>
-    <p>Abre la app <b>Terminal</b> (búscala con la lupa de arriba a la derecha), pega esta línea con el programa que hayas instalado y pulsa Intro:</p>
-    <p><code>xattr -cr /Applications/Pistas.app</code></p>
+    <p>Abre la app <b>Terminal</b> (búscala con la lupa de arriba a la derecha), pega esta línea y pulsa Intro:</p>
     <p><code>xattr -cr "/Applications/Descargar audio.app"</code></p>
     <p>Vuelve a abrir el programa. Si sigue igual, escríbeme.</p>
   </details>
@@ -209,9 +195,9 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
 </div>
 
 <h2>Cómo se usa</h2>
-<div class="two">
-  <div class="box"><h3>Descargar audio</h3><p>Copia el enlace del vídeo, pulsa <b>Pegar</b>, elige MP3 o M4A y pulsa <b>Descargar audio</b>. Se guarda en Descargas (puedes cambiar la carpeta).</p></div>
-  <div class="box"><h3>Pistas</h3><p>Pega un enlace o sube una canción y espera a que la separe. Después silencias la voz, los coros o la música, y cambias el tono y la velocidad para ensayar.</p></div>
+<div class="box">
+  <p>Copia el enlace del vídeo de YouTube y pulsa <b>Pegar</b>. Marca lo que quieras guardar (<b>Audio original</b>, <b>Karaoke</b> o <b>Solo voz</b>), elige el formato y pulsa <b>Descargar</b>. Los archivos se guardan en la carpeta que elijas.</p>
+  <p>El karaoke tarda un poco más que el audio, porque el programa separa la voz de la música en tu ordenador. Cuanto más larga es la canción, más tarda.</p>
 </div>
 
 <div class="note peach" style="margin-top:14px">
@@ -220,7 +206,7 @@ font-family:Arial,Helvetica,sans-serif;color:var(--navy);font-size:16px;line-hei
 </div>
 
 <h2>Actualizaciones</h2>
-<p class="lede">Renuevo los programas cada mes para que sigan funcionando con YouTube. Cuando haya una versión nueva, te saldrá un aviso arriba con un botón que te trae aquí: descarga la nueva y ábrela encima de la anterior.</p>
+<p class="lede">Renuevo el programa cada mes para que siga funcionando con YouTube. Cuando haya una versión nueva, te saldrá un aviso arriba con un botón que te trae aquí: descarga la nueva y ábrela encima de la anterior.</p>
 
 <div class="note sky">
   <b class="t">¿Algo no funciona?</b>
